@@ -1,0 +1,116 @@
+DJ G11 PREMIUM WEBSITE — SETUP GUIDE
+
+OPENING THE WEBSITE
+Open index.html in a browser.
+
+PUBLISHING
+Upload the entire DJ_G11_Premium_Website folder contents to your host.
+The file named index.html must stay at the website root.
+
+1. HERO VIDEO
+Add your real full-screen video here:
+assets/media/hero-video.mp4
+
+Recommended:
+- 15–30 seconds
+- Weddings and full dance floors
+- 1920×1080 or 1280×720
+- No audio needed
+- Compress to under 12 MB when possible
+- H.264 MP4
+
+2. ACTUAL DJ PHOTOS
+Replace:
+assets/media/dj-photo-1.svg
+assets/media/dj-photo-2.svg
+
+You may use JPG, PNG, or WebP. If the file extension changes, update its filename in index.html.
+
+3. PHOTO GALLERY
+Replace gallery-1.svg through gallery-6.svg in assets/media.
+WebP is recommended for speed.
+
+4. VIDEO HIGHLIGHTS
+Add:
+assets/media/highlight-1.mp4
+assets/media/highlight-2.mp4
+
+5. MUSIC MIXES
+Add:
+assets/audio/wedding-mix.mp3
+assets/audio/global-mix.mp3
+assets/audio/graduation-mix.mp3
+
+6. AUTOMATIC QUOTE EMAILS
+Find this line in index.html:
+action="https://formsubmit.co/YOUR-BOOKING-EMAIL"
+
+Replace YOUR-BOOKING-EMAIL with your real email address.
+Example:
+action="https://formsubmit.co/bookings@djg11.com"
+
+FormSubmit will send an activation email the first time the form is used.
+For a more advanced CRM, replace this form with HoneyBook, Dubsado, Wix Forms, or Formspree.
+
+7. LIVE AVAILABILITY
+Open availability.js and add booked dates:
+window.DJG11_UNAVAILABLE_DATES = [
+  "2027-06-12",
+  "2027-07-04"
+];
+
+This is a client-side checker. It does not read Google Calendar automatically.
+For true real-time calendar synchronization, connect HoneyBook, Calendly, Dubsado,
+or create a secure Google Calendar API backend.
+
+8. PROFESSIONAL BOOKING CALENDAR
+Replace the visual calendar in index.html with your Calendly, HoneyBook,
+Dubsado, or Google appointment scheduling embed code.
+
+9. REVIEWS
+Replace all sample testimonial text with verified client reviews.
+Update the Facebook and Google Review button URLs.
+
+10. INSTAGRAM FEED
+The website links directly to @djg11_1beat.
+For an automatic live feed, use an Instagram feed provider such as Elfsight or LightWidget
+and paste its embed into the social section.
+
+11. GOOGLE MAP
+The map currently centers on Kingsland, Georgia.
+To change it, edit this part of index.html:
+q=Kingsland%2C%20Georgia
+
+12. PACKAGE PRICES
+Replace “Custom quote” with actual starting prices, or keep custom quote.
+
+13. FACEBOOK LINK
+Replace each href="#" connected to Facebook with your full Facebook page URL.
+
+14. SEO
+The page already includes:
+- Title tag
+- Meta description
+- Keywords
+- Open Graph information
+- Local-business structured data
+- Semantic headings
+- Mobile-friendly layout
+- Lazy-loaded map
+- Media preload controls
+
+Before launch:
+- Add your final website domain to the structured data
+- Add a Google Business Profile
+- Connect Google Search Console
+- Submit sitemap.xml
+- Add descriptive alt text to all real images
+
+15. SPEED
+For best loading speed:
+- Convert photos to WebP
+- Keep each photo under 300 KB where practical
+- Keep hero video under 12 MB
+- Avoid uploading full-length videos directly
+- Use YouTube/Vimeo for longer highlights
+- Enable CDN and caching through your web host
