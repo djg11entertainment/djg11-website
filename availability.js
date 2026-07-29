@@ -1,6 +1,9 @@
 // Add unavailable dates in YYYY-MM-DD format.
 // Keep this file updated as bookings are confirmed.
 window.DJG11_UNAVAILABLE_DATES = [
-  // "2027-06-12",
-  // "2027-07-04"
+  // "2027-03-13",
+  // "2027-05-28",
+  // "2027-05-29",
+  // "2027-05-30",
+  // "2027-05-31"
 ];
